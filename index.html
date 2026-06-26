@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nive & Co — Organic Fruits Delivered Fresh</title>
+    <title>Nive Farming — Fresh Fruits Delivered</title>
     <meta
       name="description"
-      content="Hand-picked, certified organic fruits delivered fresh to your door. Order online from Orchard & Co."
+      content="Hand-picked, fresh fruits delivered to your door. Order online from Nive Farming."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -986,8 +986,8 @@
         <a class="brand" href="#top">
           <span class="logo">🍏</span>
           <span
-            ><span class="brand-name" id="brandName">Orchard &amp; Co.</span
-            ><small>Certified Organic</small></span
+            ><span class="brand-name" id="brandName">Nive Farming</span
+            ><small>Fresh from the Farm</small></span
           >
         </a>
         <div class="nav-links">
@@ -1104,15 +1104,18 @@
         <div>
           <div class="brand" style="margin-bottom: 8px">
             <span class="logo">🍏</span
-            ><span class="brand-name">Orchard &amp; Co.</span>
+            ><span class="brand-name">Nive Farming</span>
           </div>
           <p>
-            Certified organic fruit, delivered fresh across the city. Grown with
-            care, priced with fairness.
+            Fresh fruits delivered straight from our farm. Grown with care,
+            priced with fairness.
+          </p>
+          <p style="margin-top:10px;font-size:0.85rem;">
+            📍 <a href="https://maps.app.goo.gl/GmPNBr3RbP85jsQ27" target="_blank" rel="noopener" style="color:var(--accent-deep);text-decoration:underline;">Find us on Maps</a>
           </p>
         </div>
         <div style="text-align: right">
-          <p style="margin-bottom: 8px">© 2026 Orchard &amp; Co.</p>
+          <p style="margin-bottom: 8px">© 2026 Nive Farming</p>
           <a class="adminlink" href="#" id="adminLink">Owner login</a>
         </div>
       </div>
@@ -1141,6 +1144,9 @@
           "
         >
           You&rsquo;ll be taken to WhatsApp to confirm your order.
+        </p>
+        <p style="font-size:0.72rem;color:var(--ink-soft);text-align:center;margin-top:6px;">
+          📍 <a href="https://maps.app.goo.gl/GmPNBr3RbP85jsQ27" target="_blank" rel="noopener" style="color:var(--accent-deep);text-decoration:underline;">Find our farm on Maps</a>
         </p>
       </div>
     </aside>
@@ -1236,7 +1242,7 @@
         </h3>
         <div class="field">
           <label>WhatsApp number (with country code, no +)</label
-          ><input id="setWa" placeholder="919876543210" />
+          ><input id="setWa" placeholder="918072300703" />
         </div>
         <button
           class="btn btn-ghost"
@@ -1269,17 +1275,6 @@
       const DEFAULT_FRUITS = [
         {
           id: 1,
-          name: "Royal Gala Apples",
-          cat: "Orchard",
-          price: 189,
-          unit: "per kg",
-          emoji: "🍎",
-          stock: true,
-          desc: "Crisp, sweet and snappy — straight from the hills.",
-          img: "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=600&q=80&auto=format&fit=crop",
-        },
-        {
-          id: 2,
           name: "Alphonso Mangoes",
           cat: "Tropical",
           price: 399,
@@ -1290,120 +1285,54 @@
           img: "https://images.unsplash.com/photo-1605027990121-cbae9e0642df?w=600&q=80&auto=format&fit=crop",
         },
         {
-          id: 3,
-          name: "Nagpur Oranges",
-          cat: "Citrus",
-          price: 129,
+          id: 2,
+          name: "Chikku (Sapota)",
+          cat: "Tropical",
+          price: 120,
           unit: "per kg",
-          emoji: "🍊",
+          emoji: "🟤",
           stock: true,
-          desc: "Juicy, tangy-sweet and bursting with vitamin C.",
-          img: "https://images.unsplash.com/photo-1547514701-42782101795e?w=600&q=80&auto=format&fit=crop",
+          desc: "Soft, grainy and naturally sweet — a wholesome farm favourite.",
+          img: "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=600&q=80&auto=format&fit=crop",
+        },
+        {
+          id: 3,
+          name: "Fresh Coconut",
+          cat: "Tropical",
+          price: 50,
+          unit: "each",
+          emoji: "🥥",
+          stock: true,
+          desc: "Cool tender coconut water straight from the farm.",
+          img: "https://images.unsplash.com/photo-1575386138433-3b4e9b3a5a5e?w=600&q=80&auto=format&fit=crop",
         },
         {
           id: 4,
-          name: "Fresh Strawberries",
-          cat: "Berries",
-          price: 249,
-          unit: "per box",
-          emoji: "🍓",
+          name: "Black Plum (Jamun)",
+          cat: "Exotic",
+          price: 180,
+          unit: "per kg",
+          emoji: "🫐",
           stock: true,
-          desc: "Plump, ruby-red and hand-picked at dawn.",
-          img: "https://images.unsplash.com/photo-1518635017498-87f514b751ba?w=600&q=80&auto=format&fit=crop",
+          desc: "Deep purple, tangy-sweet — perfect for summer.",
+          img: "https://images.unsplash.com/photo-1528821128474-27f963b062bf?w=600&q=80&auto=format&fit=crop",
         },
         {
           id: 5,
-          name: "Seedless Grapes",
-          cat: "Orchard",
-          price: 159,
-          unit: "per kg",
-          emoji: "🍇",
-          stock: true,
-          desc: "Cool, crunchy green grapes — a perfect snack.",
-          img: "https://images.unsplash.com/photo-1537640538966-79f369143f8f?w=600&q=80&auto=format&fit=crop",
-        },
-        {
-          id: 6,
-          name: "Sweet Pineapple",
-          cat: "Tropical",
-          price: 99,
-          unit: "each",
-          emoji: "🍍",
-          stock: true,
-          desc: "Golden, tangy and tropical — sunshine in a fruit.",
-          img: "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=600&q=80&auto=format&fit=crop",
-        },
-        {
-          id: 7,
-          name: "Baby Watermelon",
-          cat: "Melons",
-          price: 79,
-          unit: "each",
-          emoji: "🍉",
-          stock: true,
-          desc: "Crisp, hydrating and impossibly refreshing.",
-          img: "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=600&q=80&auto=format&fit=crop",
-        },
-        {
-          id: 8,
-          name: "Wild Blueberries",
-          cat: "Berries",
-          price: 329,
-          unit: "per box",
-          emoji: "🫐",
-          stock: false,
-          desc: "Antioxidant-rich little gems. Back in stock soon.",
-          img: "https://images.unsplash.com/photo-1498557850523-fd3d118b962e?w=600&q=80&auto=format&fit=crop",
-        },
-        {
-          id: 9,
-          name: "Ruby Pomegranate",
+          name: "Water Apple (Rose Apple)",
           cat: "Exotic",
-          price: 219,
+          price: 150,
           unit: "per kg",
           emoji: "🍎",
           stock: true,
-          desc: "Jewel-like arils, sweet-tart and heart-healthy.",
-          img: "https://images.unsplash.com/photo-1541344999736-83eca272f6fc?w=600&q=80&auto=format&fit=crop",
-        },
-        {
-          id: 10,
-          name: "Golden Kiwi",
-          cat: "Exotic",
-          price: 289,
-          unit: "per kg",
-          emoji: "🥝",
-          stock: true,
-          desc: "Tropical, tangy and loaded with vitamin C.",
-          img: "https://images.unsplash.com/photo-1585059895524-72359e06133a?w=600&q=80&auto=format&fit=crop",
-        },
-        {
-          id: 11,
-          name: "Cavendish Bananas",
-          cat: "Tropical",
-          price: 69,
-          unit: "per dozen",
-          emoji: "🍌",
-          stock: true,
-          desc: "Naturally ripened, creamy and energy-packed.",
-          img: "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=600&q=80&auto=format&fit=crop",
-        },
-        {
-          id: 12,
-          name: "Juicy Peaches",
-          cat: "Stone",
-          price: 269,
-          unit: "per kg",
-          emoji: "🍑",
-          stock: true,
-          desc: "Soft, fragrant and dripping with summer sweetness.",
-          img: "https://images.unsplash.com/photo-1629828874514-c1e5103f8b7f?w=600&q=80&auto=format&fit=crop",
+          desc: "Crisp, juicy and refreshing — with a delicate floral taste.",
+          img: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=600&q=80&auto=format&fit=crop",
         },
       ];
 
       let fruits = load(LS.cat, DEFAULT_FRUITS);
       let cart = load(LS.cart, {});
-      let settings = load(LS.set, { wa: "919876543210" });
+      let settings = load(LS.set, { wa: "918072300703" });
       let activeCat = "All",
         query = "",
         isAdmin = false;
